@@ -1,0 +1,144 @@
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 50px;
+  padding-bottom: 2rem;
+}
+
+.btn {
+  box-shadow: 5px 5px 15px -1px rgba(51, 219, 255,0.3);
+}
+
+.btn :hover {
+  color: white;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background-image: url("images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-style: ridge;
+  border-width: 1rem;
+  border-color: black;
+  box-shadow: 5px 5px 15px -5px rgba(255, 51, 207,1);
+  height: 90vh;
+
+}
+
+h1 {
+  margin: 30px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 8rem;
+  color: #FFC333;
+}
+
+p {
+  font-size: 2rem;
+  color: #FFC333;
+  font-family: 'Indie Flower', cursive;
+}
+
+img {
+  width: 80%;
+  border-style: ridge;
+  border-width: 0.5rem;
+  border-radius: 30px;
+  border-color: #FF3357;
+  outline: none;
+  box-shadow: 5px 5px 15px 1px rgba(150, 51, 255,0.5);
+}
+
+footer {
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+
+}
+
+@keyframes mymove {
+50% {transform: rotate(180deg);}
+}
+@media (min-width: 1051px) and (max-width: 4050px) {
+  h1 {
+    font-size: 5rem;
+  }
+  footer {
+    position: absolute;
+    bottom: 2rem;
+    left: 40rem;
+}
+  }
+}
+@media (min-width: 1001px) and (max-width: 1050px) {
+  body {
+    height: 100vh;
+  }
+  footer {
+    position: absolute;
+    bottom: 3rem;
+    left: 15rem;
+    font-size: 2rem;
+  }
+  .container {
+    position: absolute;
+    top: 10rem;
+    left: 10rem
+  }
+  .btn {
+    position: absolute;
+    font-size: 3rem;
+    bottom: 25rem;
+    left: 22rem;
+    animation: mymove 5s infinite;
+    animation-iteration-count: 2;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 1000px) {
+  body {
+    height: 100vh;
+  }
+  footer {
+    position: absolute;
+    bottom: 3rem;
+    left: 15rem;
+    font-size: 2rem;
+  }
+  .container {
+    position: absolute;
+    top: 10rem;
+    left: 10rem
+  }
+  .btn {
+    position: absolute;
+    font-size: 3rem;
+    bottom: 35rem;
+    left: 22rem;
+    animation: mymove 5s infinite;
+    animation-iteration-count: 2;
+  }
+}
+
+/* @media (max-width: 762px) {
+  .btn {
+    font-size: 10rem;
+  } */
+
+/* } */
